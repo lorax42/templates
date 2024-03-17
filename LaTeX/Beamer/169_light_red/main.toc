@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Introduction}{5}{0}{1}
+\beamer@sectionintoc {2}{Parts}{9}{0}{2}
+\beamer@subsectionintoc {2}{1}{Part 1}{9}{0}{2}
+\beamer@subsectionintoc {2}{2}{Part 2}{13}{0}{2}
+\beamer@subsectionintoc {2}{3}{Part 3}{17}{0}{2}
+\beamer@sectionintoc {3}{Sources}{21}{0}{3}
