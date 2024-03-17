@@ -6,6 +6,7 @@ then
 elif [[ "$1" -eq "2" ]]
 then
     pdflatex main
+    pdflatex main
     xdg-open main.pdf
 else
     pdflatex main
