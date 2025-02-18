@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+
+\usepackage[a4paper, portrait, margin=2.5cm]{geometry} % paper size and margins
+\usepackage{fancyhdr} % nice headers and footers
+    \renewcommand{\headrulewidth}{0pt} % hide header
+
+\usepackage{varwidth} % minipages that ajust size to content
+\usepackage[datesep=.,style=ddmmyyyy]{datetime2} % date format
+\usepackage{array} % fixed width table columns
+\usepackage{hyperref} % manage urls
+    \hypersetup{
+        colorlinks=true,
+        urlcolor=blue,
+    }
+
+\usepackage[T1]{fontenc} % needed to change font
+\usepackage{lmodern} % font package
+
+\begin{document}
+    % header / footer settings
+    \pagestyle{fancy}
+    \fancyhead{}
+    \fancyfoot{} % clear all footer fields
+    \fancyfoot[L]{My Name}
+    \fancyfoot[C]{\thepage}
+    \fancyfoot[R]{Powered by: \LaTeX}
+
+    % set font
+    {\fontfamily{lmss}\selectfont
+        % TITLE
+        \begin{center}
+            {\Large \textbf{Application to the institute for aerospace engineering at the TU-Dresden}}
+        \end{center}
+
+        \vspace{1cm}
+
+        {\large
+            % RECIPIENT INFO
+            \begin{varwidth}[t]{0.5\textwidth}
+                \textbf{Recipient}\\
+                Institution\\
+                Department\\
+                ...
+            \end{varwidth}\hfill
+            %
+            % APPLICANT INFO
+            \begin{varwidth}[t]{0.5\textwidth}
+                \textbf{Name}\\
+                Adress\\
+                Postal code, City\\
+                Phone number\\
+                Email
+            \end{varwidth}
+        }
+
+        \vspace{1cm}
+
+        \begin{flushright}
+            \today, City
+        \end{flushright}
+
+        % LETTER (on same page)
+        \input{letter/letter.tex}
+
+        % CV (on new page)
+        \include{cv/cv.tex}
+    }
+\end{document}
