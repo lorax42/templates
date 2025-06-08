@@ -1,7 +1,7 @@
 # Application
 
 > [!WARNING]
-> Language due to fluxuation (EN-DE).
+> Language prone to fluxuation (EN-DE).
 
 ## Folder Structure
 
@@ -17,7 +17,6 @@
 │ └ ...
 ├ README.md
 └ main.tex
-
 </pre>
 
 ## Layout
