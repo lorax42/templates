@@ -5,10 +5,10 @@ then
     evince main.pdf
 elif [[ "$1" -eq "2" ]]
 then
-    pdflatex main
-    pdflatex main
+    lualatex main
+    lualatex main
     evince main.pdf
 else
-    pdflatex main
+    lualatex main
     evince main.pdf
 fi
